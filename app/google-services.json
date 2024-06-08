@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "316889892359",
+    "project_id": "rainy-live-wallpaper-3d",
+    "storage_bucket": "rainy-live-wallpaper-3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316889892359:android:4e0ee44b925984b80a8ca2",
+        "android_client_info": {
+          "package_name": "com.mtkg.rainlivewallpaper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgu80EjQsfQmDeiKIoXYZ8z8CKtm21Ri0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

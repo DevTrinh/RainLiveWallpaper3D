@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Rain Live Wallpaper 3D</string>
+    <string name="apply_wallpaper">Apply Wallpaper</string>
+    <string name="start">Start</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share">Share</string>
+    <string name="more">More</string>
+    <string name="ad_is_loading">Ad is Loading...</string>
+    <string name="this_action_contains_ads">This Action Contains Ads..</string>
+</resources>

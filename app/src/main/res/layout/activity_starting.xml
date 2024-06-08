@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".StartingActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_110sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:strokeColor="#00FFEB3B"
+        app:strokeWidth="0dp">
+
+        <ImageView
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:src="@drawable/icon" />
+        <!--        <FrameLayout-->
+        <!--            android:id="@+id/nativeAd"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:background="#5BD6D6D6" />-->
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageView
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_21sdp"
+        android:src="@drawable/btnnewstart" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/rateus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:src="@drawable/btnnewthree" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:src="@drawable/newbtn" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:src="@drawable/newbtntwo" />
+
+        <!--        <com.google.android.material.button.MaterialButton-->
+        <!--            android:id="@+id/rateus"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="@dimen/_60sdp"-->
+        <!--            android:fontFamily="@font/roboto"-->
+        <!--            android:text="@string/rate_us"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="@dimen/_9ssp"-->
+        <!--            app:backgroundTint="@color/light_black"-->
+        <!--            app:cornerRadius="@dimen/_10sdp"-->
+        <!--            app:icon="@drawable/rate_ic"-->
+        <!--            app:iconGravity="textTop"-->
+        <!--            app:iconPadding="@dimen/_10sdp"-->
+        <!--            app:iconSize="@dimen/_14sdp"-->
+        <!--            app:strokeColor="@color/white"-->
+        <!--            app:strokeWidth="@dimen/_2sdp" />-->
+
+        <!--        <com.google.android.material.button.MaterialButton-->
+        <!--            android:id="@+id/share"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="@dimen/_60sdp"-->
+        <!--            android:layout_marginHorizontal="@dimen/_21sdp"-->
+        <!--            android:fontFamily="@font/roboto"-->
+        <!--            android:text="@string/share"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="@dimen/_9ssp"-->
+        <!--            app:backgroundTint="@color/light_black"-->
+        <!--            app:cornerRadius="@dimen/_10sdp"-->
+        <!--            app:icon="@drawable/share_ic"-->
+        <!--            app:iconGravity="textTop"-->
+        <!--            app:iconPadding="@dimen/_10sdp"-->
+        <!--            app:iconSize="@dimen/_14sdp"-->
+        <!--            app:strokeColor="@color/white"-->
+        <!--            app:strokeWidth="@dimen/_2sdp" />-->
+
+        <!--        <com.google.android.material.button.MaterialButton-->
+        <!--            android:id="@+id/more"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="@dimen/_60sdp"-->
+        <!--            android:fontFamily="@font/roboto"-->
+        <!--            android:text="@string/more"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="@dimen/_9ssp"-->
+        <!--            app:backgroundTint="@color/light_black"-->
+        <!--            app:cornerRadius="@dimen/_10sdp"-->
+        <!--            app:icon="@drawable/more_ic"-->
+        <!--            app:iconGravity="textTop"-->
+        <!--            app:iconSize="@dimen/_15sdp"-->
+        <!--            app:strokeColor="@color/white"-->
+        <!--            app:strokeWidth="@dimen/_2sdp"  />-->
+    </LinearLayout>
+
+</RelativeLayout>

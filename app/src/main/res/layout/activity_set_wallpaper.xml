@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2E2E2"
+    tools:context=".SetWallpaperActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_2" />
+
+    <RelativeLayout
+        android:id="@+id/videoVIewLinId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:scaleType="fitXY">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="2dp" />
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/setWallpaperBtn"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_27sdp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/apply_wallpaper"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_13sdp"
+        app:backgroundTint="@color/light_black"
+        app:cornerRadius="@dimen/_10sdp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/_2sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/watchAdBtn"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_29sdp"
+        android:background="@drawable/btn_ad"
+        android:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backButton"
+        android:layout_width="@dimen/_47sdp"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:backgroundTint="@color/light_black"
+        app:cornerRadius="@dimen/_5sdp"
+        app:icon="@drawable/ic_round_arrow_back_24"
+        app:iconSize="@dimen/_21sdp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="@dimen/_2sdp" />
+
+</RelativeLayout>

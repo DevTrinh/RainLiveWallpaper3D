@@ -1,0 +1,91 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    namespace 'com.mtkg.rainlivewallpaper'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.mtkg.rainlivewallpaper"
+//        minSdk 24
+        minSdk 19
+        targetSdk 33
+        versionCode 11
+        versionName "1.0.11"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+
+        debug {
+            minifyEnabled true
+            shrinkResources true
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            resValue ("string", "appID", "ca-app-pub-3940256099942544~3347511713")
+            resValue ("string", "appOpenID", "ca-app-pub-3940256099942544/3419835294")
+            resValue ("string", "bannerID", "ca-app-pub-3940256099942544/6300978111")
+            resValue ("string", "NewbannerID", "ca-app-pub-3940256099942544/6300978111")
+            resValue ("string", "interstitialID", "ca-app-pub-3940256099942544/1033173712")
+            resValue ("string", "nativeID", "ca-app-pub-3940256099942544/2247696110")
+
+        }
+
+        release {
+            minifyEnabled true
+            shrinkResources true
+
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            resValue ("string", "appID", "ca-app-pub-8141128116052026~2892770261")
+            resValue ("string", "appOpenID", "ca-app-pub-8141128116052026/2321090477")
+            resValue ("string", "bannerID", "ca-app-pub-8141128116052026/9928951901")
+            resValue ("string", "NewbannerID", "ca-app-pub-8141128116052026/4320677904")
+            resValue ("string", "interstitialID", "ca-app-pub-8141128116052026/2701198570")
+            resValue ("string", "nativeID", "ca-app-pub-8141128116052026/5610013425")
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx:18.6.1'
+    implementation 'com.google.firebase:firebase-analytics-ktx:21.5.0'
+    implementation 'com.google.firebase:firebase-config-ktx:21.6.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.airbnb.android:lottie:6.0.1'
+
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
+    implementation 'com.google.android.gms:play-services-ads:22.6.0'
+
+    //GDPR MESSAGE
+    implementation 'com.google.android.ump:user-messaging-platform:2.1.0'
+
+}
